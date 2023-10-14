@@ -4,5 +4,10 @@ const getUsers = async () => {
     return data;
 }
 const displayUser = (user) => {
-    console.log(user)
+    const template = document.getElementById("card-template").content.cloneNode(true);
+    
+    template.querySelector('.card-title').innerText = user.name;
+    template.querySelector('.card-text').innerText = user.email;
+
+    document.querySelector('#user-list').appendChild(template);
 }
