@@ -31,12 +31,48 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link" href="/">Home</a>
-            <a class="nav-link active" aria-current="page" href="/post.html">Post</a>
+            <a class="nav-link active" aria-current="page" href="/post.html"
+              >Post</a
+            >
             <a class="nav-link" href="/contact-us.html">Contact Us</a>
           </div>
         </div>
       </div>
     </nav>
-    <h1>Post</h1>
+    <div class="container">
+      <h1>Post</h1>
+      <form action="post.html" method="POST">
+        <div class="mb-3">
+          <label for="name-input" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name-input"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="username-input" class="form-label">User Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username-input"
+            placeholder="Enter username"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email-input" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="email-input"
+            placeholder="Enter email"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
